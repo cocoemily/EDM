@@ -144,12 +144,12 @@ from appdata import AppDataPaths
 #path_root = Path(__file__).parents[2]
 #sys.path.append(str(path_root))
 sys.path.append(os.path.join(sys.path[0], 'lib'))
-from src.edmpy.lib.e5_widgets import e5_label, e5_button, e5_MessageBox, e5_DatagridScreen, e5_RecordEditScreen, e5_side_by_side_buttons, e5_textinput
-from src.edmpy.lib.e5_widgets import edm_manual, DataGridTextBox, e5_SaveDialog, e5_LoadDialog, e5_PopUpMenu, e5_MainScreen, e5_InfoScreen, e5_scrollview_label
-from src.edmpy.lib.e5_widgets import e5_LogScreen, e5_CFGScreen, e5_INIScreen, e5_SettingsScreen, e5_scrollview_menu, DataGridMenuList, SpinnerOptions
-from src.edmpy.lib.e5_widgets import e5_JSONScreen, DataGridLabelAndField
-from src.edmpy.lib.colorscheme import ColorScheme
-from src.edmpy.lib.misc import restore_window_size_position, filename_only, platform_name
+from .lib.e5_widgets import e5_label, e5_button, e5_MessageBox, e5_DatagridScreen, e5_RecordEditScreen, e5_side_by_side_buttons, e5_textinput
+from .lib.e5_widgets import edm_manual, DataGridTextBox, e5_SaveDialog, e5_LoadDialog, e5_PopUpMenu, e5_MainScreen, e5_InfoScreen, e5_scrollview_label
+from .lib.e5_widgets import e5_LogScreen, e5_CFGScreen, e5_INIScreen, e5_SettingsScreen, e5_scrollview_menu, DataGridMenuList, SpinnerOptions
+from .lib.e5_widgets import e5_JSONScreen, DataGridLabelAndField
+from .lib.colorscheme import ColorScheme
+from .lib.misc import restore_window_size_position, filename_only, platform_name
 
 from .geo import point, prism
 from .db import DB
