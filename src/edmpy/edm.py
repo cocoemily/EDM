@@ -128,6 +128,7 @@ from kivy.clock import Clock
 from kivy.uix.switch import Switch
 from kivy import __version__ as __kivy_version__
 
+from pathlib import Path
 import os
 import sys
 from datetime import datetime
@@ -140,21 +141,23 @@ from platformdirs import user_data_dir, user_log_dir, user_documents_dir
 from appdata import AppDataPaths
 
 # My libraries for this project
+#path_root = Path(__file__).parents[2]
+#sys.path.append(str(path_root))
 sys.path.append(os.path.join(sys.path[0], 'lib'))
-from lib.e5_widgets import e5_label, e5_button, e5_MessageBox, e5_DatagridScreen, e5_RecordEditScreen, e5_side_by_side_buttons, e5_textinput
-from lib.e5_widgets import edm_manual, DataGridTextBox, e5_SaveDialog, e5_LoadDialog, e5_PopUpMenu, e5_MainScreen, e5_InfoScreen, e5_scrollview_label
-from lib.e5_widgets import e5_LogScreen, e5_CFGScreen, e5_INIScreen, e5_SettingsScreen, e5_scrollview_menu, DataGridMenuList, SpinnerOptions
-from lib.e5_widgets import e5_JSONScreen, DataGridLabelAndField
-from lib.colorscheme import ColorScheme
-from lib.misc import restore_window_size_position, filename_only, platform_name
+from src.edmpy.lib.e5_widgets import e5_label, e5_button, e5_MessageBox, e5_DatagridScreen, e5_RecordEditScreen, e5_side_by_side_buttons, e5_textinput
+from src.edmpy.lib.e5_widgets import edm_manual, DataGridTextBox, e5_SaveDialog, e5_LoadDialog, e5_PopUpMenu, e5_MainScreen, e5_InfoScreen, e5_scrollview_label
+from src.edmpy.lib.e5_widgets import e5_LogScreen, e5_CFGScreen, e5_INIScreen, e5_SettingsScreen, e5_scrollview_menu, DataGridMenuList, SpinnerOptions
+from src.edmpy.lib.e5_widgets import e5_JSONScreen, DataGridLabelAndField
+from src.edmpy.lib.colorscheme import ColorScheme
+from src.edmpy.lib.misc import restore_window_size_position, filename_only, platform_name
 
-from geo import point, prism
-from db import DB
-from ini import INI
-from cfg import CFG
-from totalstation import totalstation
-from constants import APP_NAME
-from constants import __SPLASH_HELP__
+from .geo import point, prism
+from .db import DB
+from .ini import INI
+from .cfg import CFG
+from .totalstation import totalstation
+from .constants import APP_NAME
+from .constants import __SPLASH_HELP__
 
 # The database - pure Python
 from tinydb import TinyDB

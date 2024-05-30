@@ -4,8 +4,8 @@ from kivy.clock import Clock
 import serial
 from serial.serialutil import SerialTimeoutException
 import os
-from geo import point, prism
-from constants import APP_NAME
+from .geo import point, prism
+from .constants import APP_NAME
 from math import sqrt
 from math import pi
 from math import cos

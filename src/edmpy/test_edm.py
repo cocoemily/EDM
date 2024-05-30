@@ -1,4 +1,4 @@
-from edmpy.edm import EDM
+from src.edmpy.edm import EDM
 
 import unittest
 

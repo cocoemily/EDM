@@ -39,10 +39,10 @@ from threading import Thread
 # from appdata import AppDataPaths
 from platformdirs import user_data_dir, user_documents_dir
 
-from constants import __SPLASH_HELP__
-from constants import APP_NAME
-from lib.colorscheme import ColorScheme, make_rgb, BLACK, WHITE, GOOGLE_COLORS, MIDDLE_GREY, DARK_GREY
-from lib.misc import platform_name, locate_file
+from ..constants import __SPLASH_HELP__
+from ..constants import APP_NAME
+from .colorscheme import ColorScheme, make_rgb, BLACK, WHITE, GOOGLE_COLORS, MIDDLE_GREY, DARK_GREY
+from .misc import platform_name, locate_file
 
 
 SCROLLBAR_WIDTH = 5
